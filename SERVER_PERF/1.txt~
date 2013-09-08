@@ -1,0 +1,10 @@
+ab -r -n 100000 -c 1000 -g serv_apache.tsv "http://localhost/main.php"
+
+ab -r -n 100000 -c 1000 -g serv_nodejs.tsv "http://localhost:8080"
+
+
+ab: The Apache Bench benchmarking utility
+-n 400: The number of requests for your benchmark (yes, this one is crazy small; it’s so people don’t hammer example.com by copy pasting)
+-c 10: Number of concurrent requests
+-g apache-1.tsv: This tells ab to write a “gnuplot-file” (that’s right from the man page)
+"http://example.com": The URL you want to benchmark against

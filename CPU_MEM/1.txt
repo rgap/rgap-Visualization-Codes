@@ -1,0 +1,5 @@
+dstat -tcmn > stat.dat
+
+ps2pdf printme.ps printme.pdf 
+
+http://www.math.utk.edu/~vasili/refs/How-to/gnuplot.print.html
